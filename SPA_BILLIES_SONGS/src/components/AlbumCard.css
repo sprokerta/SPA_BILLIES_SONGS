@@ -1,0 +1,76 @@
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Tagesschrift', system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.App h1 {
+    color: #5aa277;
+    margin-bottom: 16px;
+}
+
+.App img {
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+
+.App p {
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.albums-container {
+    margin-top: 20px;
+}
+
+.album-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #b1b1b1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.album-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.album-cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.album-info {
+    flex: 1;
+}
+
+.album-title {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.album-year {
+    margin: 0 0 4px 0;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.album-songs {
+    margin: 0;
+    color: #000;
+    font-size: 0.9rem;
+}
