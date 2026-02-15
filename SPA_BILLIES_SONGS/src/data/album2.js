@@ -1,0 +1,22 @@
+export const album2 = {
+    id: 2,
+    title: 'WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?',
+    year: 2019,
+    cover: 'https://upload.wikimedia.org/wikipedia/en/3/38/When_We_All_Fall_Asleep%2C_Where_Do_We_Go%3F.png',
+    songs: [
+        { id: 0, title: '!!!!!!!', duration: '0:14' },
+        { id: 1, title: 'bad guy', duration: '3:15' },
+        { id: 2, title: 'xanny', duration: '4:04' },
+        { id: 3, title: 'you should see me in a crown', duration: '3:01' },
+        { id: 4, title: 'all the good girls go to hell', duration: '2:49' },
+        { id: 5, title: 'wish you were gay', duration: '3:42' },
+        { id: 6, title: "when the party's over", duration: '3:17' },
+        { id: 7, title: '8', duration: '2:54' },
+        { id: 8, title: 'my strange addiction', duration: '3:00' },
+        { id: 9, title: 'bury a friend', duration: '3:14' },
+        { id: 10, title: 'ilomilo', duration: '2:37' },
+        { id: 11, title: 'listen before i go', duration: '4:03' },
+        { id: 12, title: 'i love you', duration: '4:52' },
+        { id: 13, title: 'goodbye', duration: '2:00' },
+    ],
+};
