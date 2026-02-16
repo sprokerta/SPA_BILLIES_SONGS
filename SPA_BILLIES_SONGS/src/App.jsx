@@ -3,20 +3,29 @@ import { billieInfo } from './data/billieInfo';
 import { albums } from './data/albums';
 import AlbumCard from './components/AlbumCard';
 import SongList from './components/SongsList';
+import SongModal from './components/SongModal';
 import './App.css';
 
 function App() {
     const [selectedAlbum, setSelectedAlbum] = useState(null);
-
-    console.log('Information about artist:', billieInfo);
-    console.log('Albums:', albums);
+    const [selectedSong, setSelectedSong] = useState(null);
 
     const handleAlbumClick = (album) => {
         setSelectedAlbum(album);
+        setSelectedSong(null);
     };
 
     const handleBackClick = () => {
         setSelectedAlbum(null);
+        setSelectedSong(null);
+    };
+
+    const handleSongClick = (song) => {
+        setSelectedSong(song);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedSong(null);
     };
 
     return (
@@ -45,9 +54,16 @@ function App() {
                     <button onClick={handleBackClick} className="back-button">
                         Back to albums
                     </button>
-                    <h3>{selectedAlbum.name}</h3>
-                    <SongList album={selectedAlbum} />
+
+                    <SongList
+                        album={selectedAlbum}
+                        onSongClick={handleSongClick}
+                    />
                 </>
+            )}
+
+            {selectedSong && (
+                <SongModal song={selectedSong} onClose={handleCloseModal} />
             )}
         </div>
     );

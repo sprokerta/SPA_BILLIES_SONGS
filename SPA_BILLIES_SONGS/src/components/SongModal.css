@@ -1,0 +1,74 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    width: 80%;
+    max-width: 800px;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10000;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.modal-album {
+    color: #555;
+    font-style: italic;
+}
+
+.modal-lyrics {
+    color: #111;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.lyrics-line {
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.modal-footer {
+    margin-top: 30px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.modal-lyrics,
+.modal-lyrics * {
+    color: black !important;
+    background-color: white !important;
+}
+.modal-footer p {
+    color: black !important;
+}

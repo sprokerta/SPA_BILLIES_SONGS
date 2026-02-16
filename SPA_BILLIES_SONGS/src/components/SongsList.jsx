@@ -1,9 +1,9 @@
 import React from 'react';
-import './SongLists.css';
+import './SongsList.css';
 
-function SongList({ album }) {
+function SongList({ album, onSongClick }) {
     return (
-        <div className="song-list">
+        <div className="songs-list">
             <div className="album-header">
                 <img
                     src={album.cover}
@@ -19,7 +19,16 @@ function SongList({ album }) {
             </div>
             <div className="songs-container">
                 {album.songs.map((song, index) => (
-                    <div key={song.id} className="song-item">
+                    <div
+                        key={song.id}
+                        className="song-item"
+                        onClick={() =>
+                            onSongClick({
+                                ...song,
+                                albumName: album.title,
+                            })
+                        }
+                    >
                         <span className="song-number">{index + 1} </span>
                         <div className="song-info">
                             <span className="song-title">{song.title}</span>
