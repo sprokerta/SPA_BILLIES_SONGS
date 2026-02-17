@@ -64,3 +64,31 @@
     margin-right: 8px;
     font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+    .App {
+        padding: 15px;
+    }
+
+    .App h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .App img {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .App p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .albums-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

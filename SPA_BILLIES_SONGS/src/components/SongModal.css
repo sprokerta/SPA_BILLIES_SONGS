@@ -72,3 +72,26 @@
 .modal-footer p {
     color: black !important;
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        height: 90vh;
+        padding: 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-lyrics {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 35px;
+    }
+}

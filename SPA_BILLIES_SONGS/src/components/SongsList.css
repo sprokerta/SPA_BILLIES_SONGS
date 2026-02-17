@@ -103,3 +103,48 @@
     font-style: italic;
     padding: 30px 0;
 }
+
+@media (max-width: 768px) {
+    .album-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .album-header-cover {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-header-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .search-input {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .song-item {
+        padding: 10px 12px;
+        flex-wrap: wrap;
+    }
+
+    .song-number {
+        width: 30px;
+    }
+
+    .song-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .song-plays {
+        font-size: 0.8rem;
+    }
+
+    .song-duration {
+        font-size: 0.9rem;
+    }
+}
